@@ -1,5 +1,25 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+					
+		<div class="navbar navbar-inverse navbar-fixed-top" id="header_nav" >
 
-{{outlet}}
+			<div class="logo">
+				<p id="header_text">
+                    {{#link-to 'selection' tagName="li"}}
+                   <a href="selection">Выбор образовательных программ</a>
+                     {{/link-to}} </p>
+			</div>
+		    <div class="navig">
+                 {{#link-to 'check' }}
+                   <a href="check" id="link1">Проверка договора</a>
+                     {{/link-to}} 
+				
+                 {{#link-to 'info'}}
+                   <a href="info" id="link2"> Информаця по договору</a>
+                     {{/link-to}}
+				
+			</div>
+           
+		</div>
+        <div class="container-fluid">
+  {{outlet}}
+        </div>
+       

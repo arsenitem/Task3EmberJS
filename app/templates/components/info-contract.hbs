@@ -1,0 +1,11 @@
+ <p>Получить информацию по договору</p>	
+				<form class="form-inline">
+					<div class="form-group ml-sm-4 mb-2">
+                             {{input placeholder="Номер договора" id="ent" type="text" class="form-control" value=(mut contract)}}
+					</div>
+					<button type="button" class="btn btn-primary mb-2" id="check_num" {{action 'GetInfo'}}>Получить информацию</button>
+				</form>
+<div class="row justify-content-center" id="results1"></div>
+<div class="row justify-content-center" id="results2"></div>
+<div class="row justify-content-center" id="results3"></div>
+<div class="row justify-content-center" id="results4"></div>

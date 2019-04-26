@@ -1,0 +1,8 @@
+<div class="row" id="alert"></div>
+<p>Проверить корректность номера договора</p>
+				<form class="form-inline">	
+					<div class="form-group ml-sm-4 mb-2">
+							    {{input placeholder="Номер договора" id="ent" type="text" class="form-control" value=(mut contract)}}
+					</div>
+					<button type="button" class="btn btn-primary mb-2" id="check_num" {{action 'CheckContract'}}>Проверить</button>
+				</form>
